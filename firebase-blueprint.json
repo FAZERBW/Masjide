@@ -1,0 +1,52 @@
+{
+  "entities": {
+    "Announcement": {
+      "title": "Announcement",
+      "description": "A public notice or event invitation broadcasted by the mosque management.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique epoch-based or custom ID of the announcement."
+        },
+        "title": {
+          "type": "string",
+          "description": "High-level title for the user alert panel."
+        },
+        "content": {
+          "type": "string",
+          "description": "Full details of the notice or lecture schedule."
+        },
+        "timestamp": {
+          "type": "number",
+          "description": "Epoch timestamp representing when notice was dispatched."
+        },
+        "type": {
+          "type": "string",
+          "description": "Filtering classification (e.g. warning, event, info)."
+        }
+      },
+      "required": ["id", "title", "content", "timestamp", "type"]
+    },
+    "SubscribedUser": {
+      "title": "SubscribedUser",
+      "description": "FCM client token and device configuration metadata for push broadcasting.",
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "description": "The unique Web Push Messaging registration token."
+        },
+        "platform": {
+          "type": "string",
+          "description": "Device system or browser type."
+        },
+        "timestamp": {
+          "type": "number",
+          "description": "Timestamp indicating last token refresh handshake."
+        }
+      },
+      "required": ["token", "platform", "timestamp"]
+    }
+  }
+}

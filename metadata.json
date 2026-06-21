@@ -1,0 +1,6 @@
+{
+  "name": "Masjid E Quba Hub",
+  "description": "Premium multi-view Islamic Time Indicator web app built for Masjid E Quba, Dhule. Supports multiple languages, rich layouts, and Android WebView updates integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

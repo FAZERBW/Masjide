@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@600;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Reem+Kufi:wght@500;700&family=Rozha+One&family=Yatra+One&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui;
+  --font-serif: "Cormorant Garamond", "Playfair Display", "Amiri", Georgia, serif;
+  --font-mono: "Orbitron", monospace;
+  --font-cinzel: "Cinzel", "Cormorant Garamond", serif;
+  --font-reem: "Reem Kufi", "Amiri", serif;
+  --font-nas-urdu: "Noto Nastaliq Urdu", "Amiri", serif;
+  --font-devanagari: "Rozha One", "Yatra One", serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Immersive UI Themes Radial Gradients */
+.bg-immersive-emerald {
+  background: radial-gradient(circle at 50% -20%, #032e23 0%, #01120e 90%) no-repeat fixed;
+}
+
+.bg-immersive-gold {
+  background: radial-gradient(circle at 50% -20%, #451a03 0%, #0c0a09 90%) no-repeat fixed;
+}
+
+.bg-immersive-sky {
+  background: radial-gradient(circle at 50% -20%, #072d44 0%, #020617 90%) no-repeat fixed;
+}
+
+.bg-immersive-rose {
+  background: radial-gradient(circle at 50% -20%, #2d0611 0%, #090506 90%) no-repeat fixed;
+}
+
+.bg-immersive-teal {
+  background: radial-gradient(circle at 50% -20%, #075e54 0%, #01110f 90%) no-repeat fixed;
+}
+
+.bg-immersive-indigo {
+  background: radial-gradient(circle at 50% -20%, #0f0d2c 0%, #030712 90%) no-repeat fixed;
+}
+
+.bg-immersive-violet {
+  background: 
+    radial-gradient(circle at 50% -25%, rgba(139, 92, 246, 0.18) 0%, rgba(17, 3, 30, 0) 65%),
+    radial-gradient(circle at 50% -10%, #1e053a 0%, #090112 100%) no-repeat fixed;
+}
+
+.bg-immersive-amethyst {
+  background: 
+    radial-gradient(circle at 50% -25%, rgba(242, 185, 59, 0.15) 0%, rgba(30, 8, 42, 0) 60%),
+    radial-gradient(circle at 50% -10%, #270636 0%, #0d0112 100%) no-repeat fixed;
+}
+
+.bg-immersive-amber {
+  background: radial-gradient(circle at 50% -20%, #78350f 0%, #100700 90%) no-repeat fixed;
+}
+
+.bg-immersive-crimson {
+  background: radial-gradient(circle at 50% -20%, #5c0f0f 0%, #170202 90%) no-repeat fixed;
+}
+
+.bg-immersive-coral {
+  background: radial-gradient(circle at 50% -20%, #700c25 0%, #1c0205 90%) no-repeat fixed;
+}
+
+.bg-immersive-slate {
+  background: radial-gradient(circle at 50% -20%, #1e293b 0%, #090d16 90%) no-repeat fixed;
+}
+
+/* --- CLASSIC CHIC CLAYMORPHISM STYLES (Tactile 3D inflated glass-clay hybrid beauty) --- */
+
+/* Dark Mode Clay-Morphic Tiles */
+.clay-glass-emerald-dark {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1.5px solid rgba(16, 185, 129, 0.25);
+  backdrop-filter: blur(24px);
+  box-shadow: none !important;
+}
+
+.clay-glass-amber-dark {
+  background: rgba(245, 158, 11, 0.08);
+  border: 1.5px solid rgba(245, 158, 11, 0.25);
+  backdrop-filter: blur(24px);
+  box-shadow: none !important;
+}
+
+.clay-glass-sky-dark {
+  background: rgba(14, 165, 233, 0.08);
+  border: 1.5px solid rgba(14, 165, 233, 0.25);
+  backdrop-filter: blur(24px);
+  box-shadow: none !important;
+}
+
+.clay-glass-rose-dark {
+  background: rgba(244, 63, 94, 0.08);
+  border: 1.5px solid rgba(244, 63, 94, 0.25);
+  backdrop-filter: blur(24px);
+  box-shadow: none !important;
+}
+
+/* Light Mode Clay-Morphic Tiles - Plump, Soft, Colorful Pastel tactile clay cards */
+.clay-glass-emerald-light {
+  background: rgba(236, 253, 245, 0.95);
+  border: 2px solid rgba(16, 185, 129, 0.25);
+  backdrop-filter: blur(24px);
+  box-shadow: 
+    inset 5px 5px 8px rgba(255, 255, 255, 0.9),
+    inset -5px -5px 10px rgba(16, 185, 129, 0.15),
+    0 16px 30px -8px rgba(16, 185, 129, 0.12);
+}
+
+.clay-glass-amber-light {
+  background: rgba(254, 243, 199, 0.95);
+  border: 2px solid rgba(245, 158, 11, 0.25);
+  backdrop-filter: blur(24px);
+  box-shadow: 
+    inset 5px 5px 8px rgba(255, 255, 255, 0.9),
+    inset -5px -5px 10px rgba(245, 158, 11, 0.15),
+    0 16px 30px -8px rgba(245, 158, 11, 0.12);
+}
+
+.clay-glass-sky-light {
+  background: rgba(224, 242, 254, 0.95);
+  border: 2px solid rgba(14, 165, 233, 0.25);
+  backdrop-filter: blur(24px);
+  box-shadow: 
+    inset 5px 5px 8px rgba(255, 255, 255, 0.9),
+    inset -5px -5px 10px rgba(14, 165, 233, 0.15),
+    0 16px 30px -8px rgba(14, 165, 233, 0.12);
+}
+
+.clay-glass-rose-light {
+  background: rgba(254, 226, 226, 0.95);
+  border: 2px solid rgba(244, 63, 94, 0.25);
+  backdrop-filter: blur(24px);
+  box-shadow: 
+    inset 5px 5px 8px rgba(255, 255, 255, 0.9),
+    inset -5px -5px 10px rgba(244, 63, 94, 0.15),
+    0 16px 30px -8px rgba(244, 63, 94, 0.12);
+}
+
+/* --- Expanded Clay Glass Theme Variants for Luxury Royal Violet/Amethyst look --- */
+.clay-glass-amethyst-dark {
+  background: rgba(30, 10, 36, 0.45);
+  border: 1.5px solid rgba(242, 185, 59, 0.25);
+  backdrop-filter: blur(24px);
+  box-shadow: none !important;
+}
+
+.clay-glass-amethyst-light {
+  background: rgba(250, 242, 253, 0.95);
+  border: 2px solid rgba(217, 70, 239, 0.2);
+  backdrop-filter: blur(24px);
+  box-shadow: 
+    inset 5px 5px 8px rgba(255, 255, 255, 0.9),
+    inset -5px -5px 10px rgba(217, 70, 239, 0.1),
+    0 16px 30px -8px rgba(217, 70, 239, 0.08);
+}
+
+.clay-glass-violet-dark {
+  background: rgba(22, 5, 34, 0.5);
+  border: 1.5px solid rgba(139, 92, 246, 0.25);
+  backdrop-filter: blur(24px);
+  box-shadow: none !important;
+}
+
+.clay-glass-violet-light {
+  background: rgba(245, 243, 255, 0.95);
+  border: 2px solid rgba(139, 92, 246, 0.22);
+  backdrop-filter: blur(24px);
+  box-shadow: 
+    inset 5px 5px 8px rgba(255, 255, 255, 0.9),
+    inset -5px -5px 10px rgba(139, 92, 246, 0.1),
+    0 16px 30px -8px rgba(139, 92, 246, 0.08);
+}
+
+.clay-glass-slate-dark {
+  background: rgba(30, 41, 59, 0.35);
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(24px);
+  box-shadow: none !important;
+}
+
+.clay-glass-slate-light {
+  background: rgba(248, 250, 252, 0.95);
+  border: 2px solid rgba(100, 116, 139, 0.2);
+  backdrop-filter: blur(24px);
+  box-shadow: 
+    inset 5px 5px 8px rgba(255, 255, 255, 0.9),
+    inset -5px -5px 10px rgba(100, 116, 139, 0.1);
+}
+
+.clay-glass-teal-dark {
+  background: rgba(13, 148, 136, 0.08);
+  border: 1.5px solid rgba(13, 148, 136, 0.25);
+  backdrop-filter: blur(24px);
+  box-shadow: none !important;
+}
+
+.clay-glass-teal-light {
+  background: rgba(204, 251, 241, 0.95);
+  border: 2px solid rgba(20, 184, 166, 0.25);
+  backdrop-filter: blur(24px);
+  box-shadow: 
+    inset 5px 5px 8px rgba(255, 255, 255, 0.9),
+    inset -5px -5px 10px rgba(20, 184, 166, 0.15),
+    0 16px 30px -8px rgba(20, 184, 166, 0.12);
+}
+
+/* Glass Active Feedback Effects */
+.clay-button-active {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.clay-button-active:active {
+  transform: scale(0.97);
+  opacity: 0.9;
+}
+
+/* Custom hides for native look */
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #060a07;
+  min-height: 100vh;
+}
+/* Force body background matching for light class in html/body if active */
+.light-mode-body {
+  background-color: #f3f7f4 !important;
+}
+
+/* Glass panel glow animation */
+.glow-emerald {
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+}
+
+.glow-amber {
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.15);
+}
+
+.glow-sky {
+  box-shadow: 0 0 25px rgba(14, 165, 233, 0.15);
+}
+
+.glow-rose {
+  box-shadow: 0 0 25px rgba(244, 63, 94, 0.15);
+}
+
+/* Islamic Animated Theme keyframes */
+@keyframes islamic-float {
+  0% {
+    transform: translateY(11vh) rotate(0deg) scale(0.8);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.35;
+  }
+  80% {
+    opacity: 0.35;
+  }
+  100% {
+    transform: translateY(-80vh) rotate(360deg) scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes slow-geometric-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  101% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-geometric-slow {
+  animation: slow-geometric-rotation 120s linear infinite;
+}
+
+.islamic-particle-1 {
+  animation: islamic-float 22s linear infinite;
+}
+
+.islamic-particle-2 {
+  animation: islamic-float 28s linear infinite;
+  animation-delay: 5s;
+}
+
+.islamic-particle-3 {
+  animation: islamic-float 35s linear infinite;
+  animation-delay: 11s;
+}
+
+.islamic-particle-4 {
+  animation: islamic-float 42s linear infinite;
+  animation-delay: 18s;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+
